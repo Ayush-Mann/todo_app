@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Main Css starts here */
+
+html{
+    font-size: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #F5F5F5;
+    font-family: sans-serif;
+}
+
+.wrapper{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    
+  }
+  
+  .title{
+      font-size: 6rem;
+      font-weight: 500;
+      color: rgba(175,47,47,0.15);
+      margin-bottom: 1rem;
+  }
+.input_todo{
+    width: 26rem;  
+    line-height: 3.5rem; 
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    /* box-shadow: -2px 5px 10px 1px lightgrey; */
+    outline: none;
+}
+
+::placeholder{
+    font-style: italic;
+    
+}
+.ulist {
+    width: 27rem;   
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ADA49D;
+
+}
+.prime_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border: 1px solid white;
+    line-height: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: -2px 5px 10px 1px lightgrey;
+}
+.input_tick{
+    border-radius: 50px;
+}
+.layout {
+    display: none;
+    border: 1px solid white;
+    width: 26rem;
+    line-height: 2rem;
+    background: white;
+    /* box-shadow: 0 -2px 1px rgba(0,0,0,0.03), rgba(0, 0, 0, 0.2) 0px 1px 1px 0px, rgb(246, 246, 246) 0px 8px 0px -3px, rgba(0, 0, 0, 0.2) 0px 9px 1px -3px, rgb(246, 246, 246) 0px 16px 0px -6px, rgba(0, 0, 0, 0.2) 0px 17px 2px -6px; */
+    /* box-shadow: -2px 5px 10px 1px lightgrey, 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2); */
+    content: '';
+    /* box-shadow: 1px 5px 12px 4px rgba(0,0,0,0.03),1px 5px 12px 4px rgba(0,0,0,0.03), rgba(0, 0, 0, 0.2) 0px 1px 1px 0px, rgb(246, 246, 246) 0px 8px 0px -3px, rgba(0, 0, 0, 0.2) 0px 9px 1px -3px, rgb(246, 246, 246) 0px 16px 0px -6px, rgba(0, 0, 0, 0.2) 0px 17px 17px 0px; */
+    box-shadow: 1px 5px 12px 4px rgba(0,0,0,0.03), -10px 25px 16px 8px rgba(0,0,0,0.03), rgba(0, 0, 0, 0.2) 0px 1px 1px 0px, rgb(246, 246, 246) 0px 8px 0px -3px, rgba(0, 0, 0, 0.2) 0px 9px 1px -3px, rgb(246, 246, 246) 0px 16px 0px -6px, rgba(0, 0, 0, 0.2) 0px 17px 17px 0px;
+}
+
+.layout_flex {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+    width: 27rem;
+    line-height: 2.3rem;
+    background: white;
+    box-shadow: 1px 5px 12px 4px rgba(0,0,0,0.03), -10px 25px 16px 8px rgba(0,0,0,0.03), rgba(0, 0, 0, 0.2) 0px 1px 1px 0px, rgb(246, 246, 246) 0px 8px 0px -3px, rgba(0, 0, 0, 0.2) 0px 9px 1px -3px, rgb(246, 246, 246) 0px 16px 0px -6px, rgba(0, 0, 0, 0.2) 0px 17px 17px 0px;
+    text-align: center;
+    color: #474442;
+    font-size: 0.8rem;
+    
+}
+.select_all{
+    color: #474442;
+}
+.div_input{
+    background: white;
+}
+button{
+    background:white; 
+    color: #c06060;
+    border: none;
+    outline : none;
+    box-shadow: none;
+}
+button:hover{
+    color: red;
+}
+.cross:hover{
+    color: red;
+}
+
+@media all and (max-width: 368px) {
+        .wrapper{
+            width: 12rem;;
+        }
+  }
